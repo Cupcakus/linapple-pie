@@ -50,7 +50,7 @@
 
 
 // how many file names we are able to see at once!
-#define FILES_IN_SCREEN		21
+#define FILES_IN_SCREEN		13
 
 // delay after key pressed (in milliseconds??)
 #define KEY_DELAY		25
@@ -299,8 +299,8 @@ bool ChooseAnImage(int sx,int sy, char *incoming_dir, int slot, char **filename,
 //	int i;
 
 // prepare screen
-		double facx = double(g_ScreenWidth) / double(SCREEN_WIDTH);
-		double facy = double(g_ScreenHeight) / double(SCREEN_HEIGHT);
+		double facx = double(1024) / double(SCREEN_WIDTH);
+		double facy = double(768) / double(SCREEN_HEIGHT);
 
 	SDL_Surface *tempSurface = NULL;
 	if(!g_WindowResized) {
@@ -336,7 +336,7 @@ bool ChooseAnImage(int sx,int sy, char *incoming_dir, int slot, char **filename,
 		else
 			if (slot == 0) font_print_centered(sx/2,20*facy,"Select snapshot file name for loading", screen, 1*facx, 1*facy);
 
-		font_print_centered(sx/2,30*facy, "Press ENTER to choose, or ESC to cancel",screen, 1.4*facx, 1.1*facy);
+		font_print_centered(sx/2,30*facy, "ENTER to choose, ESC to cancel",screen, 1.4*facx, 1.1*facy);
 
 		files.Rewind();	// from start
 		sizes.Rewind();
