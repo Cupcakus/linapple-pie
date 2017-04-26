@@ -1,18 +1,10 @@
 # linapple-pie
-Port of linapple2b optimized for front end usage.
+Port of linapple-pie optimized for the Apple II Mini.
 
-Changes done by Mark Ormond.
+The Apple II Mini uses a low resolution (320x240) screen, and the disk chooser included in the original source was unreadable.  I have slightly modified the code a bit to make it much more readable on the tiny screen.
 
-Supports mounting and running disks from the command line, and remapping joystick.
-See README-linapple-pie for changes
+Changes done by Chris Larkin.
 
+Visit the original linapple-pie page at
 
-Visit the original linapple page at
-
-http://linapple.sourceforge.net/
-
-and the original Applewin page at
-
-https://github.com/AppleWin
-
-See the README file for more info.
+https://github.com/dabonetn/linapple-pie
