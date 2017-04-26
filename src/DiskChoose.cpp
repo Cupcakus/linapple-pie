@@ -299,8 +299,8 @@ bool ChooseAnImage(int sx,int sy, char *incoming_dir, int slot, char **filename,
 //	int i;
 
 // prepare screen
-		double facx = double(1024) / double(SCREEN_WIDTH);
-		double facy = double(768) / double(SCREEN_HEIGHT);
+		double facx = double(800) / double(SCREEN_WIDTH);
+		double facy = double(600) / double(SCREEN_HEIGHT);
 
 	SDL_Surface *tempSurface = NULL;
 	if(!g_WindowResized) {
